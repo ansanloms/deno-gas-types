@@ -1,0 +1,16 @@
+{
+  "lint": {
+    "files": {
+      "exclude": ["README.md", "types"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["README.md", "types"]
+    }
+  },
+  "importMap": "import_map.json",
+  "tasks": {
+    "convert": "deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./bin/convert.ts"
+  }
+}
