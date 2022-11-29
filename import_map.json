@@ -1,6 +1,6 @@
 {
   "imports": {
-    "octokit": "https://cdn.skypack.dev/octokit@2.0.7?dts",
-    "std/": "https://deno.land/std@0.154.0/"
+    "std/": "https://deno.land/std@0.166.0/",
+    "octokit": "npm:octokit@2.0.10"
   }
 }

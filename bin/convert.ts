@@ -11,7 +11,7 @@ const baseDir = path.join(__dirname, "../types");
 const octokit = new Octokit();
 
 const main = async () => {
-  if (await fs.existsSync(baseDir)) {
+  if (await fs.exists(baseDir)) {
     await Deno.remove(baseDir, { recursive: true });
   }
   await Deno.mkdir(baseDir);
