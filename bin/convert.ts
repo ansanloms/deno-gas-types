@@ -11,10 +11,7 @@ const baseDir = path.join(__dirname, "../types");
 const octokit = new Octokit();
 
 const main = async () => {
-  if (await fs.exists(baseDir)) {
-    await Deno.remove(baseDir, { recursive: true });
-  }
-  await Deno.mkdir(baseDir);
+  await fs.emptyDir(baseDir);
   await expand("types/google-apps-script", baseDir);
 };
 
