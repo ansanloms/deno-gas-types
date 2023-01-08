@@ -35,10 +35,7 @@ const expand = async (contentPath: string, dir: string) => {
     console.log(p);
 
     if (content.type === "dir") {
-      if (!(await fs.exists(p))) {
-        await Deno.mkdir(p);
-      }
-
+      await fs.ensureDir(p);
       await expand(content.path, p);
     } else if (path.extname(content.name) === ".ts") {
       const res = await fetch(content.download_url);
