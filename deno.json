@@ -1,12 +1,12 @@
 {
   "lint": {
     "files": {
-      "exclude": ["README.md", "types"]
+      "exclude": ["types"]
     }
   },
   "fmt": {
     "files": {
-      "exclude": ["README.md", "types"]
+      "exclude": ["types"]
     }
   },
   "importMap": "import_map.json",
