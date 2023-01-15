@@ -11,7 +11,7 @@ Add the following to `deno.json`.
 {
   "compilerOptions": {
     "types": [
-      "https://raw.githubusercontent.com/ansanloms/deno-gas-types/v1.0.56/types/index.d.ts"
+      "https://raw.githubusercontent.com/ansanloms/deno-gas-types/v1.0.57/types/index.d.ts"
     ]
   }
 }
