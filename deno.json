@@ -1,15 +1,14 @@
 {
   "lint": {
-    "files": {
-      "exclude": ["types"]
-    }
+    "exclude": ["types"]
   },
   "fmt": {
-    "files": {
-      "exclude": ["types"]
-    }
+    "exclude": ["types"]
   },
-  "importMap": "import_map.json",
+  "imports": {
+    "std/": "https://deno.land/std@0.186.0/",
+    "octokit": "npm:octokit@2.0.14"
+  },
   "tasks": {
     "convert": "deno run --allow-read --allow-env --allow-net --allow-write --allow-run ./bin/convert.ts"
   }

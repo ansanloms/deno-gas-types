@@ -1,6 +1,0 @@
-{
-  "imports": {
-    "std/": "https://deno.land/std@0.171.0/",
-    "octokit": "npm:octokit@2.0.11"
-  }
-}
